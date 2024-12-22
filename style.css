@@ -144,6 +144,11 @@ a {
     transition: 0.5s;
 }
 
+/*.contactDiv {
+    padding-top: 1%;
+    border-top: 2px solid #fff;
+}*/
+
 @media(min-width: 425px) and (max-width: 1080px) {
     .btn {
         font-size: 28px;
