@@ -6,87 +6,119 @@
     <title>Info System</title>
     <meta name="author" content="windows">
     <meta name="date" content="2023-05-12T11:14:05+0200">
-    <link rel="stylesheet" href="style.css" typ="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="Bilder/SystemIcon2.2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="top">
-        <div class="image">
-            <img src="Bilder/SystemBanner2.png" alt="Banner" class="start-image">
+    <header class="hero">
+        <img src="Bilder/SystemBanner2.png" alt="Banner" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Support by Developers.com</p>
+            <h1 class="hero-title">Discord Bot</h1>
+            <p class="hero-text">Dein All-in-One System für Serververwaltung, Moderation und gemeinschaftliches Wachstum.</p>
+            <div class="cta-group">
+                <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1035291709719969932"
+                    target="_blank" rel="noreferrer">Bot einladen</a>
+                <a class="btn" href="https://discord.gg/mSHwEr4SrQ" target="_blank" rel="noreferrer">Support Server</a>
+            </div>
         </div>
-        <div class="logo">Discord Bot</div>
+    </header>
 
-        <div class="logo-name">Support by Developers.com</div>
-    </div>
-    <br />
-    <div class="main">
-        <section class="landing-page">
-            <div class="lpage">
-                <p class="text"><br />
-                    <b>Add-Bot system:</b><br /> Made for Botlist or similar communities.
-                    <br /><br />
-                    <b>Private test channels</b><br /> You can create Private test channel to test your Bot.
-                    <br /><br />
-                    <b>Moderation</b><br /> With slash commands to moderate your server easier.
-                    <br /><br />
-                    <b>Server logging:</b><br /> Server logging events what includes messages delete and update, member bans and
-                    unbans and user joins and leaves.
-                    <br />
-                    <span style="color: rgba(255, 255, 255, 0.507)">More events will be added!</span>
-                    <br />
-                </p>
+    <main class="main">
+        <section class="features" aria-labelledby="features-title">
+            <div class="section-header">
+                <h2 id="features-title">Alles, was du für deinen Server brauchst</h2>
+                <p>Unser Add-Bot System wurde für Botlists und Communities entwickelt, die professionelle Tools benötigen.</p>
             </div>
-            <br />
-            <div class="lastpatch">
-                <p class="patchnotes"><b><u>Last patchnotes:</u></b><br /><br />
-                    <b style="color: green">+ Added:</b> Basic Ticket system
-                    <!-- <br />
-                    <b>- Removed:</b> nothing -->
-                </p>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Private Testkanäle</h3>
+                    <p>Erstelle sichere Testumgebungen, um neue Funktionen deines Bots in Ruhe zu prüfen.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Moderation mit Slash Commands</h3>
+                    <p>Nutze intuitive Befehle, um Moderationsaufgaben effizienter und transparenter zu gestalten.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Server Logging</h3>
+                    <p>Behalte wichtige Ereignisse wie Nachrichtenänderungen, Bans, Joins und Leaves jederzeit im Blick.</p>
+                </article>
             </div>
-            <br />
-            <div class="resources">
-                <p class="stats">User: <span id="userCount">failed</span> | Server: <span id="guildCount">failed</span></p>
-                <br />
-                <a href="https://discord.com/oauth2/authorize?client_id=1035291709719969932" target="_blank"><button
-                        class="link">Invite</button></a>
-                <a href="https://discord.gg/mSHwEr4SrQ" target="_blank"><button class="link">Support Server</button></a>
-            </div>
+            <p class="feature-note">Weitere Events und Funktionen werden kontinuierlich hinzugefügt.</p>
+        </section>
 
-            <div class="widget">
-                <p class="widget2">Join the Developers.com community to add your own Bot and test it in puplic or private channels</p>
-                <iframe src="https://discord.com/widget?id=915489288169345044&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <section class="stats-section" aria-labelledby="stats-title">
+            <div class="stats-card">
+                <h2 id="stats-title">Live Statistiken</h2>
+                <p class="stats-text">User: <span id="userCount">failed</span> &nbsp;|&nbsp; Server: <span id="guildCount">failed</span></p>
+                <p class="stats-hint">Die Daten werden in Echtzeit vom Bot synchronisiert.</p>
             </div>
+            <aside class="patch-card" aria-labelledby="patch-title">
+                <h3 id="patch-title">Letzte Patchnotes</h3>
+                <ul>
+                    <li><span class="status-add">+ Hinzugefügt:</span> Basic Ticket System</li>
+                </ul>
+            </aside>
+        </section>
 
-            <div class="middle">
-                <a href="tos.pp.html"><button class="btn btn2">ToS & Privacy Policy</button></a>
+        <section class="discord-section" aria-labelledby="discord-title">
+            <div class="discord-text">
+                <h2 id="discord-title">Community beitreten</h2>
+                <p>Werde Teil der Developers.com Community, teile Feedback und teste neue Bots in öffentlichen oder
+                    privaten Kanälen.</p>
+            </div>
+            <div class="discord-widget">
+                <iframe src="https://discord.com/widget?id=915489288169345044&theme=dark" width="350" height="300"
+                    allowtransparency="true" frameborder="0"
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
         </section>
-        <br />
-        <div class="contactDiv">
-            <section class="contact">
-                <h2 class="c">Cotact</h2>
-                <p>Provider:<br />ARD0NIZ<!--<br />street<br />00000 city--></p>
-                <br />
-                <p>Cotacts:<br />Number: +49 1523 856923<br /><br />E-Mail: at the moment only Discord
-                    contact<br /><br />Discord: <a href="https://discordapp.com/users/521676495316582400" target="_blank">Click
-                        here</a><br /><br />Website:
-                    you're here already</p>
-            </section>
-        </div>   
-    </div>
 
-    <div class="footer">
-        ______________________________________
-        <br />
-        (c) Alpha Development | Developers.com
-    </div>
+        <section class="policies" aria-labelledby="policies-title">
+            <div class="policies-card">
+                <h2 id="policies-title">Richtlinien</h2>
+                <p>Informiere dich über unsere Nutzungsbedingungen und Datenschutzrichtlinie.</p>
+                <a class="btn btn-outline" href="tos.pp.html">ToS &amp; Privacy Policy</a>
+            </div>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <h2 id="contact-title">Kontakt</h2>
+                <p>Nimm direkt mit dem Provider Kontakt auf oder nutze Discord für schnelle Hilfe.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Provider</h3>
+                    <p>ARD0NIZ<br>Germany</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Telefon</h3>
+                    <p>+49 1523 856923</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Discord</h3>
+                    <p><a href="https://discordapp.com/users/521676495316582400" target="_blank" rel="noreferrer">Direkt
+                            schreiben</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Website</h3>
+                    <p>Du befindest dich bereits hier &ndash; willkommen!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Alpha Development | Developers.com</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
