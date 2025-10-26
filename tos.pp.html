@@ -1,225 +1,209 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Info System</title>
+    <title>Info System &ndash; Terms &amp; Privacy</title>
     <meta name="author" content="windows">
     <meta name="date" content="2023-05-12T11:14:05+0200">
-    <link rel="stylesheet" href="style.css" typ="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="Bilder/SystemIcon2.2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <div class="top">
-        <div class="image">
-            <img src="Bilder/SystemBanner2.png" alt="Banner" class="start-image">
+    <header class="hero legal-hero">
+        <img src="Bilder/SystemBanner2.png" alt="Banner" class="hero-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">Support by Developers.com</p>
+            <h1 class="hero-title">Terms &amp; Privacy</h1>
+            <p class="hero-text">Understand how System operates, the rules that apply, and the way we protect your data.</p>
+            <div class="cta-group">
+                <a class="btn btn-outline" href="index.html">Back to landing page</a>
+            </div>
         </div>
-        <div class="logo">Discord Bot</div>
+    </header>
 
-        <div class="logo-name">Support by Developers.com</div>
-    </div>
-    <br />
-    <div class="main">
-        <section class="terms-of-services">
-            <h2 class="tos">Terms of Services</h2>
-            <p><b>1. Introduction</b>
-                <br />
-                Welcome to System, a Discord bot designed to enhance your Discord server experience. By using System,
-                you agree to comply with and be bound by the following Terms of Service. If you do not agree
-                to these Terms, please do not use System.
-                <br />
-                <br />
-                <b>2. Description of Service</b>
-                <br />
-                System is a multifunctional Discord bot that provides various features including, but not limited to,
-                moderation tools, entertainment commands, utility commands, and other server management tools.
-                <br />
-                <br />
-                <b>3. Acceptance of Terms</b>
-                <br />
-                By inviting and using System in your Discord server, you indicate your acceptance of these Terms. If you
-                do not agree to these Terms, you must not use System.
-                <br />
-                <br />
-                <b>4. Changes to Terms</b>
-                <br />
-                We reserve the right to modify these Terms at any time. Any changes will be effective immediately upon
-                posting of the revised Terms. Your continued use of System following the posting of changes constitutes
-                your acceptance of those changes.
-                <br />
-                <br />
-                <b>5. User Conduct</b>
-                <br />
-                Users agree to use System in compliance with the following rules:
-                <br />
-                Do not use System for any illegal activities.
-                Do not use System to harass, threaten, or abuse others.
-                Do not use System to spam or flood chat channels.
-                Do not exploit any bugs or vulnerabilities in System.
-                <br />
-                <br />
-                <b>6. Privacy Policy</b>
-                <br />
-                We are committed to protecting your privacy. Please refer to our Privacy Policy for information on how
-                we collect, use, and disclose information from our users.
-                <br />
-                <br />
-                <b>7. Data Collection and Use</b>
-                <br />
-                System collects certain data from users to function properly. This includes but is not limited to:
-                <br />
-                User IDs and Server IDs for command execution and response.
-                Message content for the purpose of executing commands and providing responses.
-                Other data as necessary for the bot's functionality.
-                We do not share, sell, or distribute any user data to third parties, except as required by law.
-                <br />
-                <br />
-                <b>8. Intellectual Property</b>
-                <br />
-                All intellectual property rights in and to System, including but not limited to software, trademarks,
-                and content, are owned by or licensed to us. Users are granted a limited, non-exclusive,
-                non-transferable, revocable license to use System in accordance with these Terms.
-                <br />
-                <br />
-                <b>9. Termination</b>
-                <br />
-                We reserve the right to terminate or suspend access to System immediately, without prior notice or
-                liability, for any reason whatsoever, including without limitation if you breach the Terms.
-                <br />
-                <br />
-                <b>10. Disclaimers and Limitation of Liability</b>
-                <br />
-                System is provided "as is" and "as available" without warranties of any kind. We do not guarantee that
-                System will be uninterrupted, secure, or error-free.
-                <br />
-                To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but
-                not limited to implied warranties of merchantability and fitness for a particular purpose. We do not
-                assume any liability for any:
-                <br />
-                Errors, mistakes, or inaccuracies in the content.
-                Personal injury or property damage resulting from your use of System.
-                Unauthorized access to or use of our servers and/or any personal information stored therein.
-                <br />
-                <br />
-                <b>11. Indemnification</b>
-                <br />
-                You agree to indemnify, defend, and hold harmless the developers of System, their affiliates, and their
-                respective officers, directors, employees, and agents from and against any and all claims, liabilities,
-                damages, losses, costs, expenses, or fees arising from your use of System or your violation of these
-                Terms.
-                <br />
-                <br />
-                <b>12. Governing Law</b>
-                <br />
-                These Terms shall be governed and construed in accordance with the laws of the jurisdiction where the
-                bot owner/developer is based, without regard to its conflict of law provisions.
-                <br />
-                <br />
-                <b>13. Contact Information</b>
-                <br />
-                If you have any questions about these Terms, please contact us at at Discord.
-                <br />
-                By using System, you acknowledge that you have read, understood, and agree to be bound by these Terms.
-            </p>
+    <main class="main legal-main">
+        <section class="legal-section" aria-labelledby="tos-title">
+            <div class="section-header">
+                <h2 id="tos-title">Terms of Service</h2>
+                <p>These terms govern your use of System, the Discord bot operated by Alpha Development.</p>
+            </div>
+            <div class="legal-card">
+                <ol class="legal-list">
+                    <li>
+                        <h3>1. Introduction</h3>
+                        <p>Welcome to System, a Discord bot designed to enhance your server experience. By using System,
+                            you agree to comply with and be bound by these Terms of Service. If you do not agree, please
+                            refrain from using the bot.</p>
+                    </li>
+                    <li>
+                        <h3>2. Description of service</h3>
+                        <p>System is a multifunctional Discord bot that offers moderation utilities, entertainment
+                            commands, logging, and other server management tools.</p>
+                    </li>
+                    <li>
+                        <h3>3. Acceptance of terms</h3>
+                        <p>Inviting or using System on your Discord server confirms your acceptance of these terms. If
+                            you do not agree, you must remove System from your server.</p>
+                    </li>
+                    <li>
+                        <h3>4. Changes to terms</h3>
+                        <p>We may update these terms at any time. Changes become effective immediately once published.
+                            Continued use of System after updates indicates your acceptance of the revised terms.</p>
+                    </li>
+                    <li>
+                        <h3>5. User conduct</h3>
+                        <p>Users agree to use System responsibly and must not:</p>
+                        <ul>
+                            <li>Engage in illegal activities using the bot.</li>
+                            <li>Harass, threaten, or abuse other users.</li>
+                            <li>Spam or flood channels with automated content.</li>
+                            <li>Exploit bugs or vulnerabilities in System.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>6. Privacy policy</h3>
+                        <p>Your privacy is important to us. Please review the Privacy Policy below to understand how
+                            System collects and handles data.</p>
+                    </li>
+                    <li>
+                        <h3>7. Data collection and use</h3>
+                        <p>System collects limited data required for the bot to function, including user IDs, server
+                            IDs, and the content necessary to process commands. We do not share, sell, or distribute
+                            user data except when required by law.</p>
+                    </li>
+                    <li>
+                        <h3>8. Intellectual property</h3>
+                        <p>All intellectual property rights in System, including software and branding, belong to Alpha
+                            Development or its licensors. You receive a non-transferable, revocable licence to use the
+                            bot in accordance with these terms.</p>
+                    </li>
+                    <li>
+                        <h3>9. Termination</h3>
+                        <p>We reserve the right to suspend or terminate access to System without notice if you breach
+                            these terms or misuse the service.</p>
+                    </li>
+                    <li>
+                        <h3>10. Disclaimers and limitation of liability</h3>
+                        <p>System is provided on an “as is” basis. We do not guarantee uninterrupted, secure, or
+                            error-free service. To the fullest extent permitted by law, we disclaim all warranties and
+                            are not liable for losses arising from your use of System.</p>
+                    </li>
+                    <li>
+                        <h3>11. Indemnification</h3>
+                        <p>You agree to indemnify and hold harmless the developers of System, their affiliates, and
+                            respective personnel from any claims arising out of your use of the bot or breach of these
+                            terms.</p>
+                    </li>
+                    <li>
+                        <h3>12. Governing law</h3>
+                        <p>These terms are governed by the laws of the jurisdiction where the bot owner or developer is
+                            based, without regard to conflict of law provisions.</p>
+                    </li>
+                    <li>
+                        <h3>13. Contact</h3>
+                        <p>If you have questions about these terms, please reach out via Discord using the contact
+                            information below.</p>
+                    </li>
+                </ol>
+            </div>
         </section>
-        <br />
-        <section class="privacy-policy">
-            <h2 class="pp">Privacy Policy</h2>
-            <p><b>1. Introduction</b>
-    <br />
-    Welcome to System's Privacy Policy. Your privacy is important to us, and we are committed to protecting
-    the information you share with us. This Privacy Policy outlines how we collect, use, and disclose information when you use System.
-    <br />
-    <br />
-    <b>2. Information We Collect</b>
-    <br />
-    When you use System, we may collect the following types of information:
-    <br />
-    <ul>
-        <li><b>User IDs and Server IDs:</b> These are collected to execute commands and provide responses within your Discord server.</li>
-        <li><b>Message Content:</b> We collect the content of messages only to execute commands and provide appropriate responses.</li>
-        <li><b>Usage Data:</b> This includes information about how you interact with System, such as command usage frequency and server settings.</li>
-    </ul>
-    <br />
-    <b>3. How We Use Your Information</b>
-    <br />
-    The information we collect is used for the following purposes:
-    <br />
-    <ul>
-        <li><b>To Operate and Maintain the Bot:</b> Ensuring that System functions properly and provides the services you expect.</li>
-        <li><b>To Improve the Bot:</b> Analyzing usage patterns to enhance features and user experience.</li>
-        <li><b>To Communicate with You:</b> Sending updates, responding to inquiries, and providing support.</li>
-    </ul>
-    <br />
-    <b>4. Data Sharing and Disclosure</b>
-    <br />
-    We do not share, sell, or distribute your personal data to third parties, except in the following circumstances:
-    <br />
-    <ul>
-        <li><b>With Your Consent:</b> We may share your information if you have given us explicit permission to do so.</li>
-        <li><b>For Legal Reasons:</b> We may disclose your information if required by law or in response to valid requests by public authorities.</li>
-        <li><b>To Protect Our Rights:</b> We may disclose your information to enforce our Terms of Service or to protect the security and integrity of our services.</li>
-    </ul>
-    <br />
-    <b>5. Data Security</b>
-    <br />
-    We take the security of your data seriously and implement appropriate technical and organizational measures to protect it from unauthorized access, disclosure, alteration, or destruction.
-    <br />
-    <br />
-    <b>6. Data Retention</b>
-    <br />
-    We retain your information for as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce our agreements.
-    <br />
-    <br />
-    <b>7. Your Rights</b>
-    <br />
-    Depending on your jurisdiction, you may have the following rights regarding your personal data:
-    <br />
-    <ul>
-        <li><b>Access:</b> The right to request a copy of the information we hold about you.</li>
-        <li><b>Correction:</b> The right to request correction of inaccurate or incomplete data.</li>
-        <li><b>Deletion:</b> The right to request deletion of your data, under certain conditions.</li>
-        <li><b>Objection:</b> The right to object to our processing of your data, under certain conditions.</li>
-    </ul>
-    <br />
-    <b>8. Changes to This Privacy Policy</b>
-    <br />
-    We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. Your continued use of System after any changes signifies your acceptance of the updated policy.
-    <br />
-    <br />
-    <b>9. Contact Us</b>
-    <br />
-    If you have any questions about this Privacy Policy or our data practices, please contact us at Discord.
-    <br />
-    By using System, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy.
-        </p>
-        <div class="middle">
-            <a href="index.html"><button class="btn btn2">Landing page</button></a>
-        </div>
-        </section>
-        <br />
-        <section class="contact">
-            <h2 class="c">Cotact</h2>
-            <p>Provider:<br />ARD0NIZ<!--<br />street<br />00000 city--></p>
-            <br />
-            <p>Cotacts:<br />Number: +49 1523 856923<br /><br />E-Mail: at the moment only Discord
-                contact<br /><br />Discord: <a href="https://discordapp.com/users/521676495316582400">Click
-                    here</a><br /><br />Website:
-                you're here already</p>
-        </section>
-    </div>
 
-    <div class="footer">
-        ______________________________________
-        <br />
-        (c) Alpha Development | Developers.com
-    </div>
+        <section class="legal-section" aria-labelledby="privacy-title">
+            <div class="section-header">
+                <h2 id="privacy-title">Privacy Policy</h2>
+                <p>We are committed to protecting your privacy and processing only the data required to operate the bot.</p>
+            </div>
+            <div class="legal-card">
+                <ol class="legal-list">
+                    <li>
+                        <h3>1. Introduction</h3>
+                        <p>This Privacy Policy explains how System collects, uses, and safeguards information when you
+                            interact with the bot.</p>
+                    </li>
+                    <li>
+                        <h3>2. Information we collect</h3>
+                        <p>When you use System, we may collect:</p>
+                        <ul>
+                            <li><strong>User and server IDs</strong> to execute commands and deliver responses.</li>
+                            <li><strong>Message content</strong> limited to what is necessary for processing a command.</li>
+                            <li><strong>Usage data</strong> such as command frequency and server settings.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>3. How we use information</h3>
+                        <p>Collected information is used to operate and maintain System, improve features, and
+                            communicate with you about updates or support.</p>
+                    </li>
+                    <li>
+                        <h3>4. Data sharing and disclosure</h3>
+                        <p>We do not sell or distribute your data. We only share information when you provide explicit
+                            consent, when required by law, or to protect our rights and services.</p>
+                    </li>
+                    <li>
+                        <h3>5. Data security</h3>
+                        <p>Appropriate technical and organisational measures are in place to protect data from
+                            unauthorised access, alteration, or destruction.</p>
+                    </li>
+                    <li>
+                        <h3>6. Data retention</h3>
+                        <p>Information is retained only as long as necessary to deliver services, comply with legal
+                            obligations, resolve disputes, and enforce agreements.</p>
+                    </li>
+                    <li>
+                        <h3>7. Your rights</h3>
+                        <p>Depending on your jurisdiction, you may request access to, correction of, or deletion of your
+                            data, or object to our processing of your information.</p>
+                    </li>
+                    <li>
+                        <h3>8. Changes to this policy</h3>
+                        <p>We may update this Privacy Policy from time to time. Continued use of System after changes
+                            indicates your acceptance of the updated policy.</p>
+                    </li>
+                    <li>
+                        <h3>9. Contact</h3>
+                        <p>For questions about this policy or our data practices, please contact us via Discord.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <h2 id="contact-title">Contact</h2>
+                <p>Reach the provider directly using the details below.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Provider</h3>
+                    <p>ARD0NIZ<br>Germany</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>+49 1523 856923</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Discord</h3>
+                    <p><a href="https://discord.com/users/521676495316582400" target="_blank" rel="noreferrer">ard0niz</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Website</h3>
+                    <p>You are already here &ndash; welcome!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; Alpha Development | Developers.com</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
