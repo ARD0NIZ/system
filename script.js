@@ -3,17 +3,19 @@ const apiUrl = 'https://api.lynnux.xyz/other/request?site=http://37.114.36.60:10
 fetch(apiUrl)
     .then(response => {
         if (!response.ok) {
-            throw new Error(`API-Error: ${response.status} ${response.statusText}`);
+            throw new Error(`API error: ${response.status} ${response.statusText}`);
         }
         return response.json();
     })
     .then(data => {
-        const guildCount = data.guildCount;
-        const userCount = data.userCount;
+        const guildCountElement = document.getElementById('guildCount');
+        const userCountElement = document.getElementById('userCount');
 
-        document.getElementById('userCount').textContent = userCount;
-        document.getElementById('guildCount').textContent = guildCount;
+        if (guildCountElement && userCountElement) {
+            guildCountElement.textContent = data.guildCount;
+            userCountElement.textContent = data.userCount;
+        }
     })
     .catch(error => {
-        console.error('Error at request the API:', error);
+        console.error('Error while requesting the API:', error);
     });

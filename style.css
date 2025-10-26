@@ -264,7 +264,7 @@ main {
 
 .discord-widget iframe {
     width: min(100%, 400px);
-    height: 320px;
+    height: 500px;
     border-radius: 18px;
     border: none;
     box-shadow: var(--shadow);
@@ -316,6 +316,55 @@ main {
 .contact-card p {
     margin: 0;
     color: var(--text-secondary);
+}
+
+.legal-main {
+    display: grid;
+    gap: 3.5rem;
+}
+
+.legal-section {
+    display: grid;
+    gap: 2rem;
+}
+
+.legal-card {
+    background: var(--card-bg);
+    border-radius: 18px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow);
+    padding: clamp(1.75rem, 3vw, 2.5rem);
+    backdrop-filter: blur(12px);
+}
+
+.legal-list {
+    display: grid;
+    gap: 1.75rem;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.legal-list > li {
+    color: var(--text-secondary);
+}
+
+.legal-list h3 {
+    margin: 0 0 0.5rem;
+    color: var(--text-primary);
+    font-size: 1.15rem;
+}
+
+.legal-list p {
+    margin: 0;
+}
+
+.legal-list ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.legal-list ul li {
+    margin-bottom: 0.35rem;
 }
 
 .footer {
