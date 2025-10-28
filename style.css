@@ -240,6 +240,11 @@ main {
     font-weight: 600;
 }
 
+.status-remove {
+    color: #ff0000;
+    font-weight: 600;
+}
+
 .discord-section {
     display: grid;
     gap: 2rem;
